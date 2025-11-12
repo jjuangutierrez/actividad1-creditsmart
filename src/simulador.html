@@ -1,58 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simulador de Crédito | CreditSmart</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href="">Inicio</a>
-        <a href="">Simulador</a>
-        <a href="">Solicitar credito</a>
+    <header class="header">
+      <h1>CreditSmart</h1>
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="simulador.html" class="nav-link active">Simulador</a>
+        <a href="#" class="nav-link">Solicitar crédito</a>
       </nav>
     </header>
 
-    <main>
-      <div>
-        <label for="">Buscar</label>
-        <input type="text" />
+    <main class="simulator">
+      <div class="simulator-header">
+        <h2>Simulador de Crédito</h2>
+        <p>Encuentra el crédito ideal para ti usando nuestros filtros de búsqueda</p>
+      </div>
 
-        <label for="">rango de monto</label>
-        <input type="range" name="" id="">
-        <button>Buscar</button>
+      <div class="search-container">
+        <div class="search-group">
+          <label for="search-input">Buscar por nombre del producto</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Ej: Crédito Vehículo, Vivienda, Educativo..."
+          />
+        </div>
 
-        <div class="results">
-          <div class="card">
-            <img src="https://images.pexels.com/photos/6963857/pexels-photo-6963857.jpeg" alt="Crédito libre inversión" class="card-img" />
-            <div class="card-content">
-              <h2 class="card-title">Crédito Libre Inversión</h2>
-              <p class="card-rate"><strong>Tasa:</strong> 14.4% anual</p>
-              <p class="card-amount"><strong>Monto:</strong> $1.000.000 - $50.000.000</p>
-              <p class="card-term"><strong>Plazo máximo:</strong> 60 meses</p>
-              <p class="card-desc">
-                Financia tus proyectos personales con total libertad. Tasas competitivas y plazos flexibles.
-              </p>
-              <a href="#" class="card-btn">Solicitar</a>
-            </div>
-          </div>
+        <div class="range-group">
+          <label for="amount-range">Rango de monto</label>
+          <select id="amount-range">
+            <option value="">Todos los montos</option>
+            <option value="0-5000000">Hasta $5.000.000</option>
+            <option value="5000000-20000000">$5.000.000 - $20.000.000</option>
+            <option value="20000000-50000000">$20.000.000 - $50.000.000</option>
+            <option value="50000000-100000000">$50.000.000 - $100.000.000</option>
+            <option value="100000000+">Más de $100.000.000</option>
+          </select>
+        </div>
 
-          <div class="card">
-            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Crédito vehículo" class="card-img" />
-            <div class="card-content">
-              <h2 class="card-title">Crédito Vehículo</h2>
-              <p class="card-rate"><strong>Tasa:</strong> 12.8% anual</p>
-              <p class="card-amount"><strong>Monto:</strong> $5.000.000 - $100.000.000</p>
-              <p class="card-term"><strong>Plazo máximo:</strong> 72 meses</p>
-              <p class="card-desc">
-                Estrena el auto de tus sueños. Financiamos hasta el 90% del valor.
-              </p>
-              <a href="#" class="card-btn">Solicitar</a>
-            </div>
+        <button class="search-btn">Buscar</button>
+      </div>
+
+      <section class="results">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/6963857/pexels-photo-6963857.jpeg" alt="Crédito libre inversión" class="card-img" />
+          <div class="card-content">
+            <h2 class="card-title">Crédito Libre Inversión</h2>
+            <p><strong>Tasa:</strong> 14.4% anual</p>
+            <p><strong>Monto:</strong> $1.000.000 - $50.000.000</p>
+            <p><strong>Plazo máximo:</strong> 60 meses</p>
+            <p class="card-desc">
+              Financia tus proyectos personales con total libertad. Tasas competitivas y plazos flexibles.
+            </p>
+            <a href="#" class="card-btn">Solicitar</a>
           </div>
         </div>
-      </div>
+
+        <div class="card">
+          <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Crédito vehículo" class="card-img" />
+          <div class="card-content">
+            <h2 class="card-title">Crédito Vehículo</h2>
+            <p><strong>Tasa:</strong> 12.8% anual</p>
+            <p><strong>Monto:</strong> $5.000.000 - $100.000.000</p>
+            <p><strong>Plazo máximo:</strong> 72 meses</p>
+            <p class="card-desc">Estrena el auto de tus sueños con tasas especiales.</p>
+            <a href="#" class="card-btn">Solicitar</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <p class="footer-text">
+        © 2025 CreditSmart. Todos los derechos reservados. | Términos y Condiciones | Política de Privacidad
+      </p>
+    </footer>
   </body>
 </html>
