@@ -13,7 +13,7 @@
       <nav class="navbar">
         <a href="index.html" class="nav-link">Inicio</a>
         <a href="simulador.html" class="nav-link active">Simulador</a>
-        <a href="#" class="nav-link">Solicitar crédito</a>
+        <a href="solicitar.html" class="nav-link">Solicitar crédito</a>
       </nav>
     </header>
 
@@ -24,18 +24,19 @@
       </div>
 
       <div class="search-container">
-        <div class="search-group">
+        <div class="field-group">
           <label for="search-input">Buscar por nombre del producto</label>
           <input
             type="text"
             id="search-input"
+            class="input-field"
             placeholder="Ej: Crédito Vehículo, Vivienda, Educativo..."
           />
         </div>
 
-        <div class="range-group">
+        <div class="field-group">
           <label for="amount-range">Rango de monto</label>
-          <select id="amount-range">
+          <select id="amount-range" class="input-field">
             <option value="">Todos los montos</option>
             <option value="0-5000000">Hasta $5.000.000</option>
             <option value="5000000-20000000">$5.000.000 - $20.000.000</option>
@@ -45,10 +46,10 @@
           </select>
         </div>
 
-        <button class="search-btn">Buscar</button>
+        <button class="btn btn-primary search-btn">Buscar</button>
       </div>
 
-      <section class="results">
+      <section class="results grid-container">
         <div class="card">
           <img src="https://images.pexels.com/photos/6963857/pexels-photo-6963857.jpeg" alt="Crédito libre inversión" class="card-img" />
           <div class="card-content">
@@ -59,7 +60,7 @@
             <p class="card-desc">
               Financia tus proyectos personales con total libertad. Tasas competitivas y plazos flexibles.
             </p>
-            <a href="#" class="card-btn">Solicitar</a>
+            <a href="solicitar.html" class="btn btn-primary card-btn">Solicitar</a>
           </div>
         </div>
 
@@ -71,7 +72,49 @@
             <p><strong>Monto:</strong> $5.000.000 - $100.000.000</p>
             <p><strong>Plazo máximo:</strong> 72 meses</p>
             <p class="card-desc">Estrena el auto de tus sueños con tasas especiales.</p>
-            <a href="#" class="card-btn">Solicitar</a>
+            <a href="solicitar.html" class="btn btn-primary card-btn">Solicitar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg" alt="Crédito vivienda" class="card-img" />
+          <div class="card-content">
+            <h2 class="card-title">Crédito Vivienda</h2>
+            <p><strong>Tasa:</strong> 10.2% anual</p>
+            <p><strong>Monto:</strong> $30.000.000 - $400.000.000</p>
+            <p><strong>Plazo máximo:</strong> 240 meses</p>
+            <p class="card-desc">
+              Financia hasta el 80% del valor de tu vivienda y haz realidad tu hogar.
+            </p>
+            <a href="solicitar.html" class="btn btn-primary card-btn">Solicitar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg" alt="Crédito educativo" class="card-img" />
+          <div class="card-content">
+            <h2 class="card-title">Crédito Educativo</h2>
+            <p><strong>Tasa:</strong> 9.5% anual</p>
+            <p><strong>Monto:</strong> $500.000 - $20.000.000</p>
+            <p><strong>Plazo máximo:</strong> 48 meses</p>
+            <p class="card-desc">
+              Invierte en tu educación superior o posgrado con tasas preferenciales.
+            </p>
+            <a href="solicitar.html" class="btn btn-primary card-btn">Solicitar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg" alt="Crédito empresarial" class="card-img" />
+          <div class="card-content">
+            <h2 class="card-title">Crédito Empresarial</h2>
+            <p><strong>Tasa:</strong> 15.0% anual</p>
+            <p><strong>Monto:</strong> $10.000.000 - $500.000.000</p>
+            <p><strong>Plazo máximo:</strong> 120 meses</p>
+            <p class="card-desc">
+              Impulsa tu negocio con capital flexible y condiciones diseñadas para emprendedores.
+            </p>
+            <a href="solicitar.html" class="btn btn-primary card-btn">Solicitar</a>
           </div>
         </div>
       </section>
