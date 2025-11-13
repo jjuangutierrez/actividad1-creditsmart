@@ -341,7 +341,43 @@ body {
   font-size: 0.95rem;
 }
 
+/* responsive */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .header {
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .navbar {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
@@ -350,15 +386,114 @@ body {
     font-size: 1.2rem;
   }
   
-  .navbar {
-    gap: 20px;
-  }
-  
-  .header {
-    padding: 15px 5%;
+  .hero-solicitar {
+    padding: 12px 30px;
+    font-size: 1rem;
   }
   
   .section-title {
     font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .catalog {
+    padding: 80px 5% 60px;
+  }
+  
+  .simulator {
+    padding: 100px 5% 60px;
+  }
+  
+  .form-page {
+    padding: 110px 5% 60px;
+  }
+  
+  .form-container {
+    padding: 30px 20px;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .field-group {
+    width: 100%;
+    min-width: 100%;
+  }
+  
+  .search-btn {
+    align-self: stretch;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-img {
+    height: 200px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .form-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.7rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+  }
+  
+  .simulator-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .form-container h2 {
+    font-size: 1.7rem;
+  }
+  
+  .form-section h3 {
+    font-size: 1.1rem;
+  }
+  
+  .footer-text {
+    font-size: 0.85rem;
   }
 }
