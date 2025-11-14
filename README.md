@@ -1,8 +1,14 @@
+# Equipo
+- Mariluz David Martinez: Investigación y diseño, búsqueda de referencias y definición del estilo visual.
+- Liliana Rivas Rivas: Maquetación HTML, contribución directa en la estructura de las páginas.
+- Juan Miguel Gutiérrez Escobar: Desarrollo de estilos CSS y apoyo en HTML, integración final del proyecto y despliegue en GitHub.
+
+
 # CreditSmart
 
 Plataforma web para simulación y solicitud de créditos financieros.
 
-## Características
+# Características
 
 - Catálogo de productos financieros con información detallada
 - Simulador de créditos con filtros de búsqueda
@@ -10,7 +16,7 @@ Plataforma web para simulación y solicitud de créditos financieros.
 - Diseño responsive para móviles, tablets y escritorio
 - Interfaz moderna con tema oscuro
 
-## Instalación
+# Instalación
 
 1. Clona el repositorio:
 
